@@ -13,8 +13,13 @@ public class Memo {
     private String username;
     private String contents;
 
-    public Memo(MemoRequestDto resquestDto) {
-        this.username = resquestDto.getUsername();
-        this.contents = resquestDto.getContents();
+    public Memo(MemoRequestDto requestDto) {
+        this.username = requestDto.getUsername();
+        this.contents = requestDto.getContents();
+    }
+
+    public void update(MemoRequestDto requestDto) {
+        this.username = requestDto.getUsername();
+        this.contents = requestDto.getContents();
     }
 }
