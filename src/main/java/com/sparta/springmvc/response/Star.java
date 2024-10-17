@@ -11,4 +11,7 @@ public class Star {
         this.name = name;
         this.age = age;
     }
+
+    public Star() {
+    }
 }
