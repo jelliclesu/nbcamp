@@ -113,7 +113,7 @@ function addProduct(itemDto) {
         contentType: 'application/json',
         data: JSON.stringify(itemDto),
         success: function (response) {
-            // 2. 응답 함수에서 modal을 뜨게 하고, targetId 를 reponse.id 로 설정
+            // 2. 응답 함수에서 modal을 뜨게 하고, targetId 를 response.id 로 설정
             $('#container').addClass('active');
             targetId = response.id;
         },
